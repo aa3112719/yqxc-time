@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>弈启学车-驾培改革倒计时</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.4.css">
+<link href="css/style2.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<script src="js/jquery-1.8.3.min.js"></script>    
+<script src="js/jquery.lwtCountdown-1.0.js"></script> 
+
+</head>
+<body>
+<div class="header">
+	<h1>&nbsp;</h1>
+</div><!--/header-->
+<div class="container">
+	<div class="timer-box">
+		<h5 style="font-size: 40px">距离 4月 1日 驾培改革还有:</h5>
+		<div id="countdown">
+				
+					<!--<div class="dash weeks_dash">-->
+						<!--<span class="dash_title">周</span>-->
+						<!--<div class="digit">0</div>-->
+						<!--<div class="digit">0</div>-->
+					<!--</div>-->
+
+					<div class="dash days_dash">
+						<span class="dash_title">天</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash hours_dash">
+						<span class="dash_title">小时</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<span class="dash_title">分</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<span class="dash_title">秒</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+			</div> <!-- end of countdown -->
+	</div><!--/timer-box-->
+</div><!--/container-->
+
+<!-- start of the javascript code that handles the countdown -->
+<script language="javascript" type="text/javascript">
+	jQuery(document).ready(function() {
+		$('#countdown').countDown({
+		targetDate: {
+		'day': 1,
+		'month': 4,
+		'year': 2019,
+		'hour': 0,
+		'min': 0,
+		'sec': 0
+		}
+		});
+		$('#email_field').focus(email_focus).blur(email_blur);
+		$('#subscribe_form').bind('submit', function() { return false; });
+	}); 
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
+
